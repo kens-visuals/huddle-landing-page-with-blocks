@@ -1,15 +1,34 @@
 @use '../abstracts/index.scss' as *;
 
 .intro {
+  min-height: 72rem;
+  background-color: $color-primary;
+  background-image: url('../../../images/bg-hero-mobile.svg');
+  padding-top: 2.3rem;
+
   &__header {
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
+    width: 10.5rem;
   }
 
   &__wrapper {
+    padding-inline: 2rem;
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   &__img {
+    margin-top: 5rem;
   }
 }

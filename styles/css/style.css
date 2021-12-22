@@ -1,18 +1,155 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @forward './navigation';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles/scss/layout/_index.scss 1:1  @use
- *   styles/scss/main.scss 2:1           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward './navigation';\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/scss/layout/_index.scss 1:1  @use\a   styles/scss/main.scss 2:1           root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #808d99;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+.heading {
+  color: #00252e;
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.heading--secondary {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  text-align: center;
+  line-height: 1.5;
+}
+.text--dark {
+  color: #00252e;
+}
+.text--secondary {
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 92%;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.intro {
+  min-height: 72rem;
+  background-color: #ebfbff;
+  background-image: url("../../../images/bg-hero-mobile.svg");
+  padding-top: 2.3rem;
+}
+.intro__header {
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro__logo {
+  width: 10.5rem;
+}
+.intro__wrapper {
+  padding-inline: 2rem;
+}
+.intro__heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.intro__img {
+  margin-top: 5rem;
+}
+
+.main {
+  margin-top: 6rem;
+  padding-inline: 0.3rem;
+}
+.main > * {
+  margin-bottom: 4rem;
+}
+
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.block {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 4rem;
+  box-shadow: rgba(0, 37, 46, 0.35) 0px 0px 10px -5px;
+}
+.block__img {
+  padding: 3rem 2rem 6rem 2rem;
+}
+
+.btn {
+  background-color: #ff52bf;
+  border: 0;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 6rem;
+  box-shadow: rgba(255, 82, 191, 0.3) 0px 4px 10px;
+}
+.btn:link, .btn:visited {
+  color: white;
+  text-decoration: none;
+}
+.btn--white {
+  background-color: white;
+  font-size: 1rem;
+  padding: 0.5rem 2.2rem;
+  margin-top: 0;
+  box-shadow: rgba(0, 37, 46, 0.15) 0px 3px 10px;
+}
+.btn--white:link, .btn--white:visited {
+  color: #00252e;
+}
+
+/*# sourceMappingURL=style.css.map */

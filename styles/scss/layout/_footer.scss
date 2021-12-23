@@ -6,11 +6,23 @@
   padding: 10rem 0 3rem 0;
   position: relative;
 
+  &__container {
+    @media (min-width: 1140px) {
+      padding: 10rem 0 3rem 5rem;
+      display: grid;
+      grid-template-columns: 40rem repeat(2, 1fr);
+      grid-template-rows: auto 1fr auto;
+      align-items: start;
+      gap: 4rem 15rem;
+    }
+  }
+
   &__block {
     width: 95%;
+    max-width: 80rem;
     background-color: $color-tertiary;
     border-radius: 1.5rem;
-    box-shadow: rgba($color-primary--dark, 0.35) 0px 0px 10px -5px;
+    box-shadow: rgba($color-primary--dark, 0.2) 0px 0px 10px -2px;
     padding: 4rem 1rem;
     position: absolute;
     top: -10rem;
@@ -20,24 +32,48 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: 1140px) {
+      padding: 6rem 2rem;
+      top: -18rem;
+    }
   }
 
   &__heading {
-    font-size: clmap(1.8rem, 4vw, 2.2rem);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+
+    @media (min-width: 1140px) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__btn {
+    padding: 14rem;
   }
 
   &__logo {
-    width: 16rem;
+    width: 23rem;
     padding-top: 5rem;
     filter: brightness(0) invert(1);
+
+    @media (min-width: 1140px) {
+      padding-top: 0;
+      grid-row: 1 / 2;
+    }
   }
 
   &__info {
     &-list {
       margin: 3rem 0 6rem 0;
+
+      @media (min-width: 1140px) {
+        margin: 0;
+        grid-row: 2 / 3;
+      }
     }
 
     &-item {
+      // max-width: 40rem;
       color: $color-tertiary;
       display: flex;
       align-items: flex-start;
@@ -73,7 +109,16 @@
   }
 
   &__nav {
+    @media (min-width: 1140px) {
+      grid-row: 2 / 3;
+    }
+
     &-list {
+      @media (min-width: 1140px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 5rem;
+      }
     }
 
     &-item {
@@ -99,6 +144,14 @@
       align-items: center;
       justify-content: center;
       gap: 1.2rem;
+
+      @media (min-width: 1140px) {
+        margin: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        grid-column: 3 / -1;
+        grid-row: 2 / 3;
+      }
     }
 
     &-item {
@@ -131,11 +184,19 @@
   }
 
   &__wrapper {
+    @media (min-width: 1140px) {
+      grid-column: 3 / -1;
+      grid-row: 3 / -1;
+    }
   }
 
   &__copyright {
     font-size: 1rem;
     text-align: center;
+
+    @media (min-width: 1140px) {
+      text-align: left;
+    }
   }
 
   &__attribution {

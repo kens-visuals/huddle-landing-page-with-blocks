@@ -11,7 +11,7 @@
   box-shadow: rgba($color-secondary, 0.3) 0px 4px 10px;
 
   @media (min-width: 810px) {
-    padding: 2rem 10rem;
+    padding: 1.8rem 7rem;
   }
 
   &:link,
@@ -28,12 +28,19 @@
     box-shadow: rgba($color-primary--dark, 0.15) 0px 3px 10px;
 
     @media (min-width: 810px) {
-      padding: 1rem 5rem;
+      padding: 1.5rem 6.5rem;
     }
 
     &:link,
     &:visited {
       color: $color-primary--dark;
+    }
+  }
+
+  &--footer {
+    @media (min-width: 1140px) {
+      font-size: clamp(1rem, 4vw, 2rem);
+      padding: 2.5rem 10rem;
     }
   }
 }

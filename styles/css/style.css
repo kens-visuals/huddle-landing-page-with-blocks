@@ -118,6 +118,8 @@ body {
 }
 .intro__wrapper {
   padding-inline: 2rem;
+  opacity: 0;
+  animation: fade-in 0.7s ease-in-out alternate forwards;
 }
 @media (min-width: 1140px) {
   .intro__wrapper {
@@ -148,6 +150,14 @@ body {
   }
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main {
   margin: 6rem 0 25rem 0;
   padding-inline: 0.3rem;
@@ -349,6 +359,8 @@ body {
   border-radius: 1.5rem;
   padding: 3rem 4rem;
   box-shadow: rgba(0, 37, 46, 0.2) 0px 0px 10px -2px;
+  opacity: 0;
+  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

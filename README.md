@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-There's not much to say about this project, other than it was really fun to put togther. I like such projects where you can take a full control of BEM methotology. For example, the blocks in the middle section are identical, the only difference is when on the desktop layout one of them is reversed. So by adding a modifier class, one can easily change it. Till the end of the year, 3 projects left to do. On to the next one!
+There's not much to say about this project, other than it was really fun to put together. I like such projects where you can take a full control of BEM methodology. For example, the blocks in the middle section are identical, the only difference is when on the desktop layout one of them is reversed. So by adding a modifier class, one can easily change it. Till the end of the year, 3 projects left to do. On to the next one!
 
 ### Useful resources
 

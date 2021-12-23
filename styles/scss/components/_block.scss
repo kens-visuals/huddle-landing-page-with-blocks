@@ -5,10 +5,19 @@
   border-radius: 1.5rem;
   padding: 3rem 4rem;
   box-shadow: rgba($color-primary--dark, 0.2) 0px 0px 10px -2px;
+  // NOTE:
+  // opacity: 0;
+  // visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.7s;
+
+  &.block--is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
   @media (min-width: 1140px) {
     padding: 7rem 3rem 7rem 12rem;

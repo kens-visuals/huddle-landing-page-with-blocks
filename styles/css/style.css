@@ -232,6 +232,7 @@ body {
   }
 }
 .footer__info-item {
+  max-width: 40rem;
   color: white;
   display: flex;
   align-items: flex-start;
@@ -245,13 +246,13 @@ body {
   margin: 0.3rem 1.5rem 0 0;
 }
 .footer__info-item--place::before {
-  content: url("../../../images/icon-location.svg");
+  content: url("./../../images/icon-location.svg");
 }
 .footer__info-item--phone::before {
-  content: url("../../../images/icon-phone.svg");
+  content: url("./../../images/icon-phone.svg");
 }
 .footer__info-item--email::before {
-  content: url("../../../images/icon-email.svg");
+  content: url("./../../images/icon-email.svg");
 }
 @media (min-width: 1140px) {
   .footer__nav {
@@ -272,6 +273,9 @@ body {
   color: white;
   font-size: 1.8rem;
   text-decoration: none;
+}
+.footer__nav-link:hover, .footer__nav-link:active {
+  border-bottom: 0.1rem solid currentColor;
 }
 .footer__social-list {
   margin: 5rem 0 2rem 0;
@@ -311,6 +315,7 @@ body {
 .footer__social-icon {
   width: 1.5rem;
   fill: white;
+  transition: all 0.3s;
 }
 @media (min-width: 1140px) {
   .footer__wrapper {
@@ -348,6 +353,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.7s;
+}
+.block.block--is-visible {
+  opacity: 1;
+  visibility: visible;
 }
 @media (min-width: 1140px) {
   .block {
@@ -380,6 +390,7 @@ body {
   text-align: center;
   padding: 1.2rem 6rem;
   box-shadow: rgba(255, 82, 191, 0.3) 0px 4px 10px;
+  transition: all 0.3s;
 }
 @media (min-width: 810px) {
   .btn {
@@ -389,6 +400,10 @@ body {
 .btn:link, .btn:visited {
   color: white;
   text-decoration: none;
+}
+.btn:hover, .btn:active {
+  cursor: pointer;
+  opacity: 0.7;
 }
 .btn--white {
   background-color: white;

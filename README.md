@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT NAME Solution
+# Frontend Mentor - Huddle Landing Page with Alternating Feature Blocks Solution
 
-This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LINK).
+This is a solution to the [Huddle Landing Page with Alternating Feature Blocks Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).
 
 ## Table of contents
 
@@ -21,8 +21,8 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 
 Users should be able to:
 
-- OBJECTIVE_1
-- OBJECTIVE_2
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 

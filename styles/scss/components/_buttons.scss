@@ -9,6 +9,7 @@
   text-align: center;
   padding: 1.2rem 6rem;
   box-shadow: rgba($color-secondary, 0.3) 0px 4px 10px;
+  transition: all 0.3s;
 
   @media (min-width: 810px) {
     padding: 1.8rem 7rem;
@@ -18,6 +19,12 @@
   &:visited {
     color: $color-tertiary;
     text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    opacity: 0.7;
   }
 
   &--white {

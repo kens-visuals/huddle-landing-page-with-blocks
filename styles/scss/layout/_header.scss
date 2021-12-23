@@ -25,6 +25,10 @@
   &__wrapper {
     padding-inline: 2rem;
 
+    // NOTE:
+    // opacity: 0;
+    // animation: fade-in 0.7s ease-in-out alternate forwards;
+
     @media (min-width: 1140px) {
       padding: 0;
       display: flex;
@@ -53,3 +57,14 @@
     }
   }
 }
+
+// NOTE:
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }

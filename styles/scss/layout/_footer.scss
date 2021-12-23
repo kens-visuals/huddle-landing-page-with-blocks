@@ -73,7 +73,7 @@
     }
 
     &-item {
-      // max-width: 40rem;
+      max-width: 40rem;
       color: $color-tertiary;
       display: flex;
       align-items: flex-start;
@@ -90,19 +90,19 @@
 
       &--place {
         &::before {
-          content: url('../../../images/icon-location.svg');
+          content: url('./../../images/icon-location.svg');
         }
       }
 
       &--phone {
         &::before {
-          content: url('../../../images/icon-phone.svg');
+          content: url('./../../images/icon-phone.svg');
         }
       }
 
       &--email {
         &::before {
-          content: url('../../../images/icon-email.svg');
+          content: url('./../../images/icon-email.svg');
         }
       }
     }
@@ -133,6 +133,11 @@
         color: $color-tertiary;
         font-size: 1.8rem;
         text-decoration: none;
+      }
+
+      &:hover,
+      &:active {
+        border-bottom: 0.1rem solid currentColor;
       }
     }
   }
@@ -180,6 +185,7 @@
     &-icon {
       width: 1.5rem;
       fill: $color-tertiary;
+      transition: all 0.3s;
     }
   }
 

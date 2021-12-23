@@ -1,14 +1,74 @@
 @use '../abstracts/index.scss' as *;
 
 .footer {
+  color: $color-tertiary;
+  background-color: $color-primary--dark;
+  padding: 10rem 0 3rem 0;
+  position: relative;
+
   &__block {
+    width: 95%;
+    background-color: $color-tertiary;
+    border-radius: 1.5rem;
+    box-shadow: rgba($color-primary--dark, 0.35) 0px 0px 10px -5px;
+    padding: 4rem 1rem;
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+  }
+
+  &__logo {
+    width: 16rem;
+    padding-top: 5rem;
+    filter: brightness(0) invert(1);
   }
 
   &__info {
     &-list {
+      margin: 3rem 0 6rem 0;
     }
 
     &-item {
+      color: $color-tertiary;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &::before {
+        width: 1rem;
+        margin: 0.3rem 1.5rem 0 0;
+      }
+
+      &--place {
+        &::before {
+          content: url('../../../images/icon-location.svg');
+        }
+      }
+
+      &--phone {
+        &::before {
+          content: url('../../../images/icon-phone.svg');
+        }
+      }
+
+      &--email {
+        &::before {
+          content: url('../../../images/icon-email.svg');
+        }
+      }
     }
   }
 
@@ -17,20 +77,56 @@
     }
 
     &-item {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
     }
 
     &-link {
+      &:link,
+      &:visited {
+        color: $color-tertiary;
+        font-size: 1.8rem;
+        text-decoration: none;
+      }
     }
   }
 
   &__social {
     &-list {
+      margin: 5rem 0 2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
     }
 
     &-item {
+      border: 0.1rem solid $color-tertiary;
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        border: 0.1rem solid $color-secondary;
+
+        .footer__social-icon {
+          fill: $color-secondary;
+        }
+      }
+    }
+
+    &-link {
+      width: 3rem;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &-icon {
+      width: 1.5rem;
+      fill: $color-tertiary;
     }
   }
 
@@ -38,19 +134,23 @@
   }
 
   &__copyright {
+    font-size: 1rem;
+    text-align: center;
   }
 
   &__attribution {
+    font-size: 1rem;
+
     &-link:link,
     &-link:visited {
       text-transform: uppercase;
-      // color: ;
+      color: $color-primary;
       transition: all 0.3s;
     }
 
     &-link:hover,
     &-link:active {
-      // color: ;
+      color: $color-tertiary;
     }
   }
 }

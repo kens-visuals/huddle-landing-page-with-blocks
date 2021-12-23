@@ -1,7 +1,7 @@
 @use '../abstracts/index.scss' as *;
 
 .main {
-  margin-top: 6rem;
+  margin: 6rem 0 25rem 0;
   padding-inline: 0.3rem;
 
   & > * {

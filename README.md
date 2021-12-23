@@ -11,7 +11,6 @@ This is a solution to the [Huddle Landing Page with Alternating Feature Blocks C
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -30,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/huddle-landing-page-with-blocks/](https://kens-visuals.github.io/huddle-landing-page-with-blocks/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -41,38 +40,16 @@ Users should be able to:
 - SCSS custom properties
 - CSS Flexbox
 - CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+There's not much to say about this project, other than it was really fun to put togther. I like such projects where you can take a full control of BEM methotology. For example, the blocks in the middle section are identical, the only difference is when on the desktop layout one of them is reversed. So by adding a modifier class, one can easily change it. Till the end of the year, 3 projects left to do. On to the next one!
 
 ### Useful resources
 
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Box Shadows](https://getcssscan.com/css-box-shadow-examples) - My go to CSS box shadows collection.
 
 ## Author
 

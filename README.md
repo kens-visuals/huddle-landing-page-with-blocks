@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/huddle-landing-page-with-blocks/](https://kens-visuals.github.io/huddle-landing-page-with-blocks/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/huddle-landing-page-with-blocks-built-with-scss-bem-and-vanilla-js-Z6zhfo-X8](https://www.frontendmentor.io/solutions/huddle-landing-page-with-blocks-built-with-scss-bem-and-vanilla-js-Z6zhfo-X8)
 
 ## My process
 

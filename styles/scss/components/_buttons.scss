@@ -4,11 +4,15 @@
   background-color: $color-secondary;
   border: 0;
   border-radius: 5rem;
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 4vw, 1.4rem);
   font-weight: 700;
   text-align: center;
   padding: 1.2rem 6rem;
   box-shadow: rgba($color-secondary, 0.3) 0px 4px 10px;
+
+  @media (min-width: 810px) {
+    padding: 2rem 10rem;
+  }
 
   &:link,
   &:visited {
@@ -18,10 +22,14 @@
 
   &--white {
     background-color: $color-tertiary;
-    font-size: 1rem;
+    font-size: clamp(1rem, 4vw, 1.4rem);
     padding: 0.5rem 2.2rem;
     margin-top: 0;
     box-shadow: rgba($color-primary--dark, 0.15) 0px 3px 10px;
+
+    @media (min-width: 810px) {
+      padding: 1rem 5rem;
+    }
 
     &:link,
     &:visited {

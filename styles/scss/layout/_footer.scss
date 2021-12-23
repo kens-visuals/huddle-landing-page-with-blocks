@@ -23,7 +23,7 @@
   }
 
   &__heading {
-    font-size: 1.8rem;
+    font-size: clmap(1.8rem, 4vw, 2.2rem);
   }
 
   &__logo {

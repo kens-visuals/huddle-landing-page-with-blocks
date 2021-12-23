@@ -14,7 +14,7 @@
   }
 
   &__logo {
-    width: 10.5rem;
+    width: clamp(10.5rem, 80vw, 20rem);
   }
 
   &__wrapper {

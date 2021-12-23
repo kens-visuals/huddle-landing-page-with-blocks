@@ -5,8 +5,13 @@
   border-radius: 1.5rem;
   padding: 3rem 4rem;
   box-shadow: rgba($color-primary--dark, 0.35) 0px 0px 10px -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   &__img {
-    padding: 3rem 2rem 6rem 2rem;
+    width: 40rem;
+    padding: 3rem 1rem 6rem 1rem;
   }
 }
